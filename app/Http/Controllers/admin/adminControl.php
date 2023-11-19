@@ -10,4 +10,7 @@ class adminControl extends Controller
     public function layout(){
         return view('layout.layout');
     }
+    public function login(){
+        return view('layout.adminLogin');
+    }
 }

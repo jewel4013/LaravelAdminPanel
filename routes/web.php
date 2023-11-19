@@ -20,4 +20,5 @@ Route::get('/', function () {
 
 Route::prefix('/admin')->group(function(){
     Route::get('/dashboard', [adminControl::class, 'layout']);
+    Route::match(['get', 'post'], 'login', [adminControl::class, 'login']);
 });
