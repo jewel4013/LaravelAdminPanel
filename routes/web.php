@@ -22,5 +22,6 @@ Route::prefix('/admin')->group(function(){
     Route::match(['get', 'post'], 'login', [adminControl::class, 'login']);
     Route::group(['middleware' => ['admin']], function () {
         Route::get('/dashboard', [adminControl::class, 'layout']);
+        Route::get('logout', [adminControl::class, 'logout']);
     });
 });
