@@ -23,7 +23,7 @@
           </div>
           <!-- /.card-header -->
           <!-- form start -->
-          <form>
+          <form action="" method="POST">
             <div class="card-body">
               <div class="form-group">
                 <label for="email">Email address</label>
